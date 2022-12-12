@@ -36,8 +36,8 @@ namespace lab3ex4
             }
             return v;
         }
-
-        static void ShowVector (int[] vectorToShow)
+        //pentru vizibilitate am lasat afisarea arrayului (totodata este mai usor de vazut min max in felul acesta)
+        static void ShowVector(int[] vectorToShow)
         {
             Console.WriteLine("Afisam vectorul");
 
@@ -53,9 +53,9 @@ namespace lab3ex4
         {
             Console.WriteLine("Afisam vectorul max");
 
-                int max = vectorMaxToShow.Max();
-                Console.WriteLine(max);
-         
+            int max = vectorMaxToShow.Max();
+            Console.WriteLine(max);
+
         }
         static void ShowMinVector(int[] vectorMinToShow)
         {
@@ -71,16 +71,16 @@ namespace lab3ex4
 
             for (int i = 0; i < vectorPrimeNumber.Length; i++)
             {
-                for (j = 0; j < vectorPrimeNumber[i]; j++)
+                for (j = 2; j < vectorPrimeNumber[i]; j++)
                     if ((vectorPrimeNumber[i] % 2 == 0))
                     {
-                        Console.WriteLine("{0} : Is NOT a primenumber", +vectorPrimeNumber[i]);
+                        Console.WriteLine("{0} : NU este numar prim", +vectorPrimeNumber[i]);
                         break;
                     }
+
                 if (j == vectorPrimeNumber[i])
                 {
-                    Console.WriteLine("{0} : Is a primenumber", +vectorPrimeNumber[i]);
-
+                    Console.WriteLine("{0} : Este numar prim", +vectorPrimeNumber[i]);
                 }
 
             }
@@ -90,29 +90,19 @@ namespace lab3ex4
         {
             int j;
 
-            for(int i = 0; i< vectorShowNumDBT.Length; i++)
+            for (int i = 0; i < vectorShowNumDBT.Length; i++)
             {
                 for (j = 0; j < vectorShowNumDBT[i]; j++)
-                   if ((vectorShowNumDBT[i] % 3 == 0))
+                    if ((vectorShowNumDBT[i] % 3 == 0))
                     {
-                    Console.WriteLine("{0} : este divizibil cu 3", +vectorShowNumDBT[i]);
-                    break;
-                }
+                        Console.WriteLine("{0} : este divizibil cu 3", +vectorShowNumDBT[i]);
+                        break;
+                    }
             }
-
-
-
-
         }
-
-
-
-
-
     }
-
 
 }
 
-    
+
 
