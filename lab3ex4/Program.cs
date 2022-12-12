@@ -45,8 +45,6 @@ namespace lab3ex4
             {
                 Console.WriteLine(vectorToShow[i]);
             }
-
-
         }
 
         static void ShowMaxVector(int[] vectorMaxToShow)
