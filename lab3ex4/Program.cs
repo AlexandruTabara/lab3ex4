@@ -55,6 +55,7 @@ namespace lab3ex4
             Console.WriteLine(max);
 
         }
+
         static void ShowMinVector(int[] vectorMinToShow)
         {
             Console.WriteLine("Afisam vectorul min");
